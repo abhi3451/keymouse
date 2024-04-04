@@ -1,4 +1,3 @@
-// QuizContext.js
 import React, { useContext, useReducer, useEffect } from "react";
 import { QuizContext } from "./QuizContext";
 

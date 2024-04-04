@@ -14,7 +14,6 @@ const QuizShow = ({ quizData }) => {
   const { state, dispatch } = useQuizContext();
   const {
     currentQuestionIndex,
-
     answerSubmitted,
     totalQuestions,
     correctAnswers,
