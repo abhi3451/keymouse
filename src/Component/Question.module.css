@@ -1,0 +1,188 @@
+.wrapper {
+  display: flex;
+  background: rgba(224, 224, 224, 0.7);
+  width: 70vw;
+  height: 95vh;
+  margin: 0px auto 0px auto;
+  justify-content: center;
+  overflow: hidden;
+}
+.quizContainer {
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 90%;
+  width: 80%;
+  background: white;
+  margin-top: 1%;
+  padding: 20px;
+}
+
+.questionNumber {
+  padding: 5px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.questions {
+  display: grid;
+
+  justify-items: left;
+  margin-top: 20px;
+  margin-left: 7%;
+  margin-bottom: 30px;
+}
+
+.category {
+  font-size: 15px;
+  color: rgb(162, 162, 162);
+}
+
+.stars {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  width: 70%;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.option:hover {
+  background-color: #121212;
+  color: white;
+}
+
+.selected {
+  background-color: #000000;
+  color: white;
+}
+
+.feedback {
+  margin-left: 10px;
+  margin-top: 60px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.percentageIndicator {
+  display: flex;
+
+  justify-content: space-between;
+  bottom: 0;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.nextBtnInactive {
+  background-color: transparent;
+  color: rgba(253, 253, 253, 0.9);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nextBtn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.progressMeterContainer {
+  width: 100%;
+  height: 3%;
+  top: 0;
+  left: 0;
+  position: sticky;
+  bottom: 100%;
+}
+
+.progressMeter {
+  height: 10%;
+  transition: width 0.3s ease;
+
+  /* position: relative; */
+}
+.percentMeter {
+  height: 15px;
+  width: 100%;
+  transition: width 0.3s ease;
+  position: relative;
+}
+.percentwrapper {
+  width: 100%;
+  height: 5%;
+  top: 85%;
+  position: sticky;
+  bottom: 0;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(76, 76, 76);
+}
+
+.foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(8, 8, 8);
+  z-index: 1;
+}
+.backgroundm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(8, 8, 8);
+  z-index: 1;
+}
+.foregroundP {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(103, 103, 103);
+  z-index: 1;
+}
