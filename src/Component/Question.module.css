@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   background: rgba(224, 224, 224, 0.7);
-  width: 70vw;
+  width: 100vw;
   height: 95vh;
   margin: 0px auto 0px auto;
   justify-content: center;
